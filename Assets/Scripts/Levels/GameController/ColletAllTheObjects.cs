@@ -12,6 +12,8 @@ public class ColletAllTheObjects : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textCoins;
     [SerializeField] private string nextLevel;
     [SerializeField] private bool saveGame;
+    [SerializeField] private LoseGame loseGame;
+    private bool isNextLevel;
     private int nextSceneIndex;
     void Start()
     {
@@ -24,18 +26,28 @@ public class ColletAllTheObjects : MonoBehaviour
 
         if (theAllObjects.childCount == 0 && handPlayer.childCount == 0)
         {
-            //gameController.moveEndLevel();
-            SceneManager.LoadScene(nextLevel);
             if (saveGame)
             {
-                if(PlayerPrefs.GetInt("levelAt") < nextSceneIndex)
+                if (PlayerPrefs.GetInt("levelAt") < nextSceneIndex)
                     PlayerPrefs.SetInt("levelAt", nextSceneIndex);
                 int coin = int.Parse(textCoins.text.Substring(7));
                 PlayerPrefs.SetInt("coins", coin);
-            }    
+            }
+            //gameController.moveEndLevel();
+            if (!isNextLevel)
+                StartCoroutine(CoolDownRoutine()); 
             
         }
             
             
+    }
+
+    IEnumerator CoolDownRoutine()
+    {
+        isNextLevel = true;
+        loseGame.winGame("Won", "Good Job!");
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene(nextLevel);
+
     }
 }

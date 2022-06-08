@@ -35,7 +35,7 @@ public class TurnOffFire : MonoBehaviour
         timeLeft -= 1;
         if (timeLeft < 0)
         {
-            loseGame.loseGame("the time of the fire is over!");
+            loseGame.loseGame("GameOver","the time of the fire is over!");
         }
 
         timeFire.text = "" + (timeLeft);

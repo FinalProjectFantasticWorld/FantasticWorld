@@ -58,6 +58,11 @@ public class AudioManager : MonoBehaviour
         Play("FailedBin");
     }
 
+    public void winGame()
+    {
+        Play("WinGame");
+    }
+
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.getName() == name);

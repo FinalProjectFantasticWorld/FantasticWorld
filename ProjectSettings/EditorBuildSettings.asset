@@ -24,16 +24,16 @@ EditorBuildSettings:
     path: Assets/Scenes/MainTutorialGame.unity
     guid: 3321c075bc3af9f47a78c7009a6eb7ad
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel1Part1.unity
+    path: Assets/Scenes/GameTutorialPart1/TutorialLevel1Part1.unity
     guid: afe76598aa78655478d526e9d5206ab3
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel1Part2.unity
+    path: Assets/Scenes/GameTutorialPart2/TutorialLevel1Part2.unity
     guid: dcd867d93fa52af4d9328b8c48fb3f54
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel1Part3.unity
+    path: Assets/Scenes/GameTutorialPart3/TutorialLevel1Part3.unity
     guid: b7ce754171f02c54a87f14e9e9cf3955
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel1Part4.unity
+    path: Assets/Scenes/GameTutorialPart4/TutorialLevel1Part4.unity
     guid: b344987a10cbf3e4890c5bb86010925a
   - enabled: 1
     path: Assets/Scenes/SeaLevel/TutorialSeaLevelPart1.unity

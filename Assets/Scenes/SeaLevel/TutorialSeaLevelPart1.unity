@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 55197608}
   - component: {fileID: 55197609}
   m_Layer: 0
-  m_Name: LoseGame
+  m_Name: HappenGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,10 +704,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f912f9a71a03b24fac49bec674acb4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loseGameText: {fileID: 1889491844}
-  nameScene: MainGame
+  happenGameText: {fileID: 1889491844}
+  nameWinScene: TutorialSeaLevelPart2
+  nameLoseScene: MainTutorialGame
   MainCamera: {fileID: 214758107}
-  explanationLoseGame: {fileID: 1497420310}
+  explanationHappenGame: {fileID: 1497420310}
+  audioManager: {fileID: 841878936}
 --- !u!1 &57094204
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,9 +7431,9 @@ MonoBehaviour:
   sounds:
   - name: Background
     volume: 0
-    pitch: 0.36
-    loop: 0
-    clip: {fileID: 8300000, guid: ae2d2fbc24e2dca44b1356b45631cd54, type: 3}
+    pitch: 1
+    loop: 1
+    clip: {fileID: 8300000, guid: 90de5c6122e5e914aa59a0cd01ba4ab4, type: 3}
     source: {fileID: 0}
   - name: Jump
     volume: 0.334
@@ -7450,6 +7452,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     clip: {fileID: 8300000, guid: 364f9611bd0844a47a1ce0f0fb4d641f, type: 3}
+    source: {fileID: 0}
+  - name: WinGame
+    volume: 0.328
+    pitch: 1
+    loop: 0
+    clip: {fileID: 8300000, guid: 6bc01f0beb6b4af4c926cea95ea114e4, type: 3}
     source: {fileID: 0}
 --- !u!4 &841878937
 Transform:
@@ -9090,6 +9098,7 @@ MonoBehaviour:
   textCoins: {fileID: 1615410649}
   nextLevel: TutorialSeaLevelPart2
   saveGame: 0
+  loseGame: {fileID: 55197609}
 --- !u!4 &987315237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8011316666368785474, guid: 596ce0f8cdfedf641a71e7866382561a, type: 3}
@@ -13211,7 +13220,7 @@ GameObject:
   - component: {fileID: 1497420311}
   - component: {fileID: 1497420310}
   m_Layer: 5
-  m_Name: ExplanationLoseGame
+  m_Name: ExplanationHappenGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13670,7 +13679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581124108}
   m_Layer: 5
-  m_Name: LoseGame
+  m_Name: HappenGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16433,7 +16442,7 @@ GameObject:
   - component: {fileID: 1889491845}
   - component: {fileID: 1889491844}
   m_Layer: 5
-  m_Name: TextLoseGame
+  m_Name: TextHappenGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20887,6 +20896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761377415405982132}
   - component: {fileID: 1725170764577623406}
+  - component: {fileID: 3011824063610868663}
   m_Layer: 8
   m_Name: gabarierBabord
   m_TagString: Untagged
@@ -20894,6 +20904,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &3011824063610868663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011824063610868662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1187991, y: 0.8340738, z: 1.8857447}
+  m_Center: {x: -0.6699634, y: -0.22609448, z: -8.927435}
 --- !u!1 &3030140907229653666
 GameObject:
   m_ObjectHideFlags: 0
@@ -22607,6 +22630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138118576587293664}
   - component: {fileID: 2901211922148764776}
+  - component: {fileID: 5329721038581057172}
   m_Layer: 8
   m_Name: gabarierTribord
   m_TagString: Untagged
@@ -22614,6 +22638,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &5329721038581057172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329721038581057171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1054626, y: 0.8298839, z: 1.886934}
+  m_Center: {x: -0.6976557, y: -0.19671038, z: -8.926813}
 --- !u!4 &5346807403176386119
 Transform:
   m_ObjectHideFlags: 0

@@ -43,7 +43,7 @@ public class TimerGame : MonoBehaviour
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             int coin = int.Parse(textCoins.text.Substring(7));
             PlayerPrefs.SetInt("coins", coin);
-            loseGame.loseGame("Time Over");
+            loseGame.loseGame("GameOver","Time Over");
         }
         else
         {

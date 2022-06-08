@@ -565,6 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boat: {fileID: 1073948129505441342}
   player: {fileID: 2015327733}
+  circleFishingRod: {fileID: 0}
   fishingRod: {fileID: 242897767}
   movementFishingRod: {fileID: 1998069667}
   outFromBoat: {x: 40, y: 0, z: 170}
@@ -3342,8 +3343,6 @@ MonoBehaviour:
   player: {fileID: 2015327733}
   startPositionRod: {fileID: 949789020}
   catchMaterial: {fileID: 2100000, guid: d8a83193dbdcce34692c562d15862a2a, type: 2}
-  sphere1: {fileID: 0}
-  boat: {fileID: 0}
 --- !u!1 &255004265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,6 +3732,7 @@ MonoBehaviour:
   speedSpeeker: 0
   NPC: {fileID: 1919492926}
   isPlayFunction: 1
+  notStopTime: 0
 --- !u!1 &300252648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4053,6 +4053,7 @@ MonoBehaviour:
   _textScene: {fileID: 1202322318}
   _imageTextScene: {fileID: 2059281776}
   _timeTextScene: 3
+  showInStart: 0
 --- !u!1 &335629951
 GameObject:
   m_ObjectHideFlags: 0
@@ -10399,6 +10400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2015327733}
+  circlefishingRod: {fileID: 0}
   fishingRod: {fileID: 242897767}
   boat: {fileID: 1073948129505441342}
   movementFishingRod: {fileID: 0}
@@ -11086,7 +11088,9 @@ MonoBehaviour:
   gameController: {fileID: 0}
   handPlayer: {fileID: 1928232699}
   textCoins: {fileID: 1615410649}
+  nextLevel: 
   saveGame: 1
+  loseGame: {fileID: 0}
 --- !u!1 &977792831
 GameObject:
   m_ObjectHideFlags: 0
@@ -13617,20 +13621,21 @@ MonoBehaviour:
   arrayTutorialObjects:
   - arrayTutorialObjects:
     - {fileID: 635189011}
-    distanceFromArrow: 00000000
-    isPressT: 0
+    isNPC: 0
+    isCollision: 0
     textTutorial: go to
   - arrayTutorialObjects:
     - {fileID: 677630123}
     - {fileID: 1717276521}
-    distanceFromArrow: 
-    isPressT: 0
+    isNPC: 0
+    isCollision: 0
     textTutorial: bobo
   - arrayTutorialObjects:
     - {fileID: 635189011}
-    distanceFromArrow: 
-    isPressT: 0
+    isNPC: 0
+    isCollision: 0
     textTutorial: shalom
+  player: {fileID: 0}
   prefab: {fileID: 4363263424329421491, guid: 26d9c98ff968bd3498af16d8a4853029, type: 3}
   handPlayer: {fileID: 1928232699}
   startTextInSceneCanvas: {fileID: 320008984}
@@ -15167,6 +15172,7 @@ MonoBehaviour:
   speedSpeeker: 0
   NPC: {fileID: 1919492926}
   isPlayFunction: 1
+  notStopTime: 0
 --- !u!1 &1473036214
 GameObject:
   m_ObjectHideFlags: 0
@@ -15984,6 +15990,7 @@ MonoBehaviour:
   speedSpeeker: 0
   NPC: {fileID: 21708505}
   isPlayFunction: 1
+  notStopTime: 0
 --- !u!1 &1531349481
 GameObject:
   m_ObjectHideFlags: 0
@@ -17206,7 +17213,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderSensitivity: {fileID: 1410562648}
   maxSensativity: 1
-  volume: 1
   sliderVolume: {fileID: 1584131978}
   maxVolume: 1
   menuGamePlay: {fileID: 1378185963}
@@ -17978,6 +17984,7 @@ MonoBehaviour:
   speedSpeeker: 0
   NPC: {fileID: 947409426}
   isPlayFunction: 0
+  notStopTime: 0
 --- !u!1 &1771298231
 GameObject:
   m_ObjectHideFlags: 0
@@ -19504,6 +19511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2015327733}
+  circlefishingRod: {fileID: 0}
   fishingRod: {fileID: 242897767}
   boat: {fileID: 1073948129505441342}
   movementFishingRod: {fileID: 1998069667}
@@ -23821,6 +23829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761377415405982132}
   - component: {fileID: 1725170764577623406}
+  - component: {fileID: 3011824063610868663}
   m_Layer: 8
   m_Name: gabarierBabord
   m_TagString: Untagged
@@ -23828,6 +23837,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &3011824063610868663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011824063610868662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1187991, y: 0.8340738, z: 1.8857447}
+  m_Center: {x: -0.66997105, y: -0.22609401, z: -8.927435}
 --- !u!1 &3030140907229653666
 GameObject:
   m_ObjectHideFlags: 0
@@ -25541,6 +25563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138118576587293664}
   - component: {fileID: 2901211922148764776}
+  - component: {fileID: 5329721038581057172}
   m_Layer: 8
   m_Name: gabarierTribord
   m_TagString: Untagged
@@ -25548,6 +25571,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &5329721038581057172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329721038581057171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1054626, y: 0.8298839, z: 1.886934}
+  m_Center: {x: -0.6976557, y: -0.19670966, z: -8.926812}
 --- !u!4 &5346807403176386119
 Transform:
   m_ObjectHideFlags: 0

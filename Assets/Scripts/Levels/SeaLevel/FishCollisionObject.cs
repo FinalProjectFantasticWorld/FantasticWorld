@@ -12,7 +12,7 @@ public class FishCollisionObject : MonoBehaviour
         {
             //Destroy(collision.gameObject);
             //Destroy(this.gameObject);
-            loseGame.loseGame("the fish ate garbage in the sea");
+            loseGame.loseGame("GameOver","the fish ate garbage in the sea");
         }
     }
 }

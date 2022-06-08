@@ -10,7 +10,7 @@ public class CollisionFire : MonoBehaviour
 
         if (other.transform.tag == "Fire")
         {
-            loseGame.loseGame("you touched the fire!");
+            loseGame.loseGame("GameOver","you touched the fire!");
         }
     }
 }
