@@ -131,7 +131,7 @@ Difference: "Fantastic World" is not only based on recycling but on many other t
 
 ## Official components
 
-More information about the game can be read here : [https://github.com/FinalProjectGame/FantasticWorld/wiki/Official-components](link)
+More information about the game can be read here : [https://github.com/FinalProjectGame/FantasticWorld/wiki/Official-components](https://github.com/FinalProjectFantasticWorld/FantasticWorld/wiki/Official-Components)
 
 </div>
 
