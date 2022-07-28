@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollisionFire : MonoBehaviour
 {
-    [SerializeField] private LoseGame loseGame;
+    [Tooltip("what happens when you lose/win game.")] [SerializeField] private LoseGame loseGame;
     private void OnTriggerEnter(Collider other)
     {
 

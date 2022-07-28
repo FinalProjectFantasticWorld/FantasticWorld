@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
 /**
- * This component makes its object watch a given radius, and if the target is found - it starts chasing it.
+ * This component makes its object watch a given radius, and if the target is found - it starts run away from it.
  */
 [RequireComponent(typeof(Runner))]
 public class RadiusWatcher: MonoBehaviour {
-    [SerializeField] float radiusToWatch = 5f;
+    [Tooltip("size radius watch")] [SerializeField] float radiusToWatch = 5f;
 
     private Runner chaser;
     private void Start() {

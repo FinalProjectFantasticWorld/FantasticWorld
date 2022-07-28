@@ -6,9 +6,9 @@ using UnityEngine;
 public class Statistics : MonoBehaviour
 {
 
-    [SerializeField] private TextMeshProUGUI objectsGUI;
-    [SerializeField] private GameObject objects;
-    [SerializeField] private string textStatistics;
+    [Tooltip("Statistics GUI Text.")] [SerializeField] private TextMeshProUGUI objectsGUI;
+    [Tooltip("The garbage in the game.")] [SerializeField] private GameObject objects;
+    [Tooltip("the description text of the statistics.")] [SerializeField] private string textStatistics;
     // Start is called before the first frame update
 
 

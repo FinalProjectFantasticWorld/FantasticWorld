@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class OptionsGamePlay : MonoBehaviour
 {
-    [SerializeField] public static float sensativity = 1;
-    [SerializeField] private Slider sliderSensitivity;
-    [SerializeField] private float maxSensativity;
+    [Tooltip("the speed sensativity")] [SerializeField] public static float sensativity = 1;
+    [Tooltip("Slider of sensativity")] [SerializeField] private Slider sliderSensitivity;
+    [Tooltip("Maximum speed sensativity")] [SerializeField] private float maxSensativity;
 
 
-    [SerializeField] public static float volume = 1;
-    [SerializeField] private Slider sliderVolume;
-    [SerializeField] private float maxVolume;
-    [SerializeField] private GameObject menuGamePlay;
+    [Tooltip("the intensity of the volume")] [SerializeField] public static float volume = 1;
+    [Tooltip("Slider of volume")] [SerializeField] private Slider sliderVolume;
+    [Tooltip("Maximum volume")] [SerializeField] private float maxVolume;
+    [Tooltip("MenuGamePlay")] [SerializeField] private GameObject menuGamePlay;
 
     public static bool menuIsActive;
 

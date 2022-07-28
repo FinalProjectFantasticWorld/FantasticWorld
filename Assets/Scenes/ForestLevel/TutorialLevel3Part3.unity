@@ -781,6 +781,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 2083404073}
     m_Modifications:
     - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
+      propertyPath: nameWinScene
+      value: MainTutorialGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
+      propertyPath: nameLoseScene
+      value: MainTutorialGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
       propertyPath: happenGameText
       value: 
       objectReference: {fileID: 259133082}
@@ -14314,6 +14322,14 @@ PrefabInstance:
       value: HappenGame
       objectReference: {fileID: 0}
     - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
+      propertyPath: nameWinScene
+      value: MainTutorialGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
+      propertyPath: nameLoseScene
+      value: MainTutorialGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
       propertyPath: happenGameText
       value: 
       objectReference: {fileID: 506478639}
@@ -27516,6 +27532,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2083404073}
     m_Modifications:
+    - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
+      propertyPath: nameWinScene
+      value: MainTutorialGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
+      propertyPath: nameLoseScene
+      value: MainTutorialGame
+      objectReference: {fileID: 0}
     - target: {fileID: 4478022653121708182, guid: 40f809df9cf03484e91e005a5ee69c65, type: 3}
       propertyPath: happenGameText
       value: 

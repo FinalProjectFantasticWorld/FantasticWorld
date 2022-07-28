@@ -5,8 +5,8 @@ using UnityEngine;
 public class TypeObject : MonoBehaviour
 {
 
-    [SerializeField] string type;
-    [SerializeField] Sprite imageObject;
+    [Tooltip("the type of garbage (like: Plastic, Glass, Paper, Organic")] [SerializeField] string type;
+    [Tooltip("the image of the garbage")] [SerializeField] Sprite imageObject;
 
     public string getType()
     {

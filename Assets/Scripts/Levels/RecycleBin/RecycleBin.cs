@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class RecycleBin : MonoBehaviour
 {
     [Tooltip("open the recyclebin")] [SerializeField] private bool isOpen;
-    [SerializeField] private string type;
+    [Tooltip("type of garbage")] [SerializeField] private string type;
 
     //[Tooltip("")] [SerializeField] private GameObject hisObject;
 

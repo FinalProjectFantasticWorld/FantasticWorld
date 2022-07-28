@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AimWaterGun : MonoBehaviour
 {
-    [SerializeField] private Canvas aimGunWaterCanvas;
+    [Tooltip("GUI aim gun water")] [SerializeField] private Canvas aimGunWaterCanvas;
 
     private void OnTriggerEnter(Collider other)
     {

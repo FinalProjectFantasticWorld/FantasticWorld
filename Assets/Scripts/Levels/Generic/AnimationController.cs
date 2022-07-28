@@ -6,33 +6,33 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     [Header("Animation Fields")]
-    [SerializeField] private bool activeAnimation;
+    [Tooltip("to activate animator")] [SerializeField] private bool activeAnimation;
 
-    [SerializeField] private string typeFloat;
-    [SerializeField] private float valueFloat;
-    [SerializeField] private bool floatInStart;
+    [Tooltip("type float of animator")] [SerializeField] private string typeFloat;
+    [Tooltip("value float of animator")] [SerializeField] private float valueFloat;
+    [Tooltip("activate (float) in start")] [SerializeField] private bool floatInStart;
 
-    [SerializeField] private string typeInt;
-    [SerializeField] private int valueInt;
-    [SerializeField] private bool intInStart;
-
-
-    [SerializeField] private string typeBool;
-    [SerializeField] private bool valueBool;
-    [SerializeField] private bool boolInStart;
+    [Tooltip("type int of animator")] [SerializeField] private string typeInt;
+    [Tooltip("value int of animator")] [SerializeField] private int valueInt;
+    [Tooltip("activate (int) in start")] [SerializeField] private bool intInStart;
 
 
-    [SerializeField] private bool floatInPatrollAnimator;
+    [Tooltip("type bool of animator")] [SerializeField] private string typeBool;
+    [Tooltip("value bool of animator")] [SerializeField] private bool valueBool;
+    [Tooltip("activate (bool) in start")] [SerializeField] private bool boolInStart;
 
-    [SerializeField] private bool intInPatrollAnimator;
 
-    [SerializeField] private bool boolInPatrollAnimator;
+    [Tooltip("float in patroll animator")] [SerializeField] private bool floatInPatrollAnimator;
 
-    [SerializeField] private bool floatInPatrollAnimatorStop;
+    [Tooltip("int in patroll animator")] [SerializeField] private bool intInPatrollAnimator;
 
-    [SerializeField] private bool intInPatrollAnimatorStop;
+    [Tooltip("bool in patroll animator")] [SerializeField] private bool boolInPatrollAnimator;
 
-    [SerializeField] private bool boolInPatrollAnimatorStop;
+    [Tooltip("float in patroll animator stop")] [SerializeField] private bool floatInPatrollAnimatorStop;
+
+    [Tooltip("int in patroll animator stop")] [SerializeField] private bool intInPatrollAnimatorStop;
+
+    [Tooltip("bool in patroll animator stop")] [SerializeField] private bool boolInPatrollAnimatorStop;
 
 
 

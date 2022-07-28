@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MenuGamePlay : MonoBehaviour
 {
-    [SerializeField] private GameObject menu;
+    [Tooltip("Menu GameObject")] [SerializeField] private GameObject menu;
     
 
 

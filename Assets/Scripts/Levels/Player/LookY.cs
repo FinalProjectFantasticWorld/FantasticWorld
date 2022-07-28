@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LookY : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 1f;
+    [Tooltip("speed Look Y")] [SerializeField] private float rotationSpeed = 1f;
 
     void Update()
     {

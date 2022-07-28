@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class FishingRodUI : MonoBehaviour
 {
-    [SerializeField] private KeyCode key;
-    private Image imageKey;
+    [Tooltip("KeyCode that has been pressed for controll Circle fishing rod")] [SerializeField] private KeyCode key;
+    private Image imageKey; // get the image button key
     private void Start()
     {
         imageKey = GetComponent<Image>();
@@ -17,11 +17,11 @@ public class FishingRodUI : MonoBehaviour
     {
         if(Input.GetKeyDown(key))
         {
-            imageKey.color = Color.green;
+            imageKey.color = Color.green; // changing color of the current button that used.
         }
         if(Input.GetKeyUp(key))
         {
-            imageKey.color = Color.white;
+            imageKey.color = Color.white; // changing to the regular color
         }
     }
 }

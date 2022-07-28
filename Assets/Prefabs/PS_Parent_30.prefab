@@ -124,10 +124,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f912f9a71a03b24fac49bec674acb4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loseGameText: {fileID: 4478022654428948463}
-  nameScene: MainGame
+  happenGameText: {fileID: 4478022654428948463}
+  nameWinScene: MainGame
+  nameLoseScene: MainGame
   MainCamera: {fileID: 4478022654670640709}
-  explanationLoseGame: {fileID: 4478022654503838600}
+  explanationHappenGame: {fileID: 4478022654503838600}
+  audioManager: {fileID: 0}
 --- !u!1 &4478022653406521996
 GameObject:
   m_ObjectHideFlags: 0

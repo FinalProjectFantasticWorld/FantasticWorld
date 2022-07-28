@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class LoseGame : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI happenGameText;
-    [SerializeField] private string nameWinScene;
-    [SerializeField] private string nameLoseScene;
-    [SerializeField] private Camera MainCamera;
-    [SerializeField] private TextMeshProUGUI explanationHappenGame;
-    [SerializeField] private AudioManager audioManager;
+    [Tooltip("Text title (lose or win)")] [SerializeField] private TextMeshProUGUI happenGameText;
+    [Tooltip("string the next scene because winning level")] [SerializeField] private string nameWinScene;
+    [Tooltip("string the main scene because losing level")] [SerializeField] private string nameLoseScene;
+    [Tooltip("Main Camera")] [SerializeField] private Camera MainCamera;
+    [Tooltip("Text explanation what happen if losing or winning")] [SerializeField] private TextMeshProUGUI explanationHappenGame;
+    [Tooltip("Audio Manager")] [SerializeField] private AudioManager audioManager;
     private Camera cam;
     private GameObject player;
     private bool isHappen;

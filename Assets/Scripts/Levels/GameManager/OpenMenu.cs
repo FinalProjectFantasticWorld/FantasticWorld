@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class OpenMenu : MonoBehaviour
 {
-    [SerializeField] private KeyCode keyOpenMenu;
-    [SerializeField] private GameObject menu;
+    [Tooltip("KeyCode to open menu")] [SerializeField] private KeyCode keyOpenMenu;
+    [Tooltip("Menu GameObject")] [SerializeField] private GameObject menu;
     // Start is called before the first frame update
     void Start()
     {

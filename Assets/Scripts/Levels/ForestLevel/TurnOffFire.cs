@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class TurnOffFire : MonoBehaviour
 {
     private TextMesh timeFire;
-    [SerializeField] private float timeLeft;
-    [SerializeField] private LoseGame loseGame;
+    [Tooltip("The amount of time the fire has")] [SerializeField] private float timeLeft;
+    [Tooltip("what happens when you lose/win game.")] [SerializeField] private LoseGame loseGame;
     private bool takingAway;
     void Start()
     {

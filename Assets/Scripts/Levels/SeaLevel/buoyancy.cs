@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class buoyancy : MonoBehaviour
 {
-    [SerializeField]
-    float buoyancy_force;
-    Rigidbody rig;
-    [Tooltip("sliding distance left and right")]
-    [SerializeField] private float distance;
-    [Tooltip("speed of the object")]
-    [SerializeField] private float frequency;
+    [Tooltip("buoyancy force on the the object")] [SerializeField] float buoyancy_force;
+    Rigidbody rig; // rigibody
+    [Tooltip("sliding distance left and right")] [SerializeField] private float distance;
+    [Tooltip("speed of the object")] [SerializeField] private float frequency;
     // Start is called before the first frame update
     void Start()
     {

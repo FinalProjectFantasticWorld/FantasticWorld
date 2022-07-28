@@ -8,12 +8,12 @@ using UnityEngine.UI;
 public class TimerGame : MonoBehaviour
 {
 
-    [SerializeField] private TextMeshProUGUI timerText;
-    [SerializeField] private float timeLeft;
+    [Tooltip("Text Game timer")] [SerializeField] private TextMeshProUGUI timerText;
+    [Tooltip("initial amount of time")] [SerializeField] private float timeLeft;
+    [Tooltip("Text coins")] [SerializeField] private TextMeshProUGUI textCoins;
+    [Tooltip("what happens when you lose/win game.")] [SerializeField] private LoseGame loseGame;
     private float addTime;
     private bool takingAway;
-    [SerializeField] private TextMeshProUGUI textCoins;
-    [SerializeField] private LoseGame loseGame;
     // Start is called before the first frame update
     void Start()
     {

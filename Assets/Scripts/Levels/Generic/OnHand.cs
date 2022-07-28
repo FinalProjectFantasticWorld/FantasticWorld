@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class OnHand : MonoBehaviour
 {
-    
-    [SerializeField] private Image onHand;
-    [SerializeField] private TextMeshProUGUI emptyTextHand;
+
+    [Tooltip("GUI image on hand player")] [SerializeField] private Image onHand;
+    [Tooltip("GUI empty text on hand player")] [SerializeField] private TextMeshProUGUI emptyTextHand;
     private Sprite oldSprite;
     private void Start()
     {

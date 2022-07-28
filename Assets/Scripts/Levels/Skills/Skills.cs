@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Skills : MonoBehaviour
 {
-    [SerializeField] private TimerGame timer;
-    [SerializeField] private SimpleSampleCharacterControl playerMovement;
+    [Tooltip("Timer of the game.")] [SerializeField] private TimerGame timer;
+    [Tooltip("Player")] [SerializeField] private SimpleSampleCharacterControl playerMovement;
     public void selectSkill(string skill)
     {
         switch (skill)
@@ -20,7 +20,7 @@ public class Skills : MonoBehaviour
         }
     }
 
-
+    //timerSkill
     private void timerSkill(string skill)
     {
         timer.addTimeSkill(30);
@@ -28,6 +28,7 @@ public class Skills : MonoBehaviour
         PlayerPrefs.SetString(skill, "0");
     }
 
+    //speedSkill
     private void speedSkill(string skill)
     {
         StartCoroutine(timeSpeedSkill());
@@ -35,6 +36,7 @@ public class Skills : MonoBehaviour
         PlayerPrefs.SetString(skill, "0");
     }
 
+    //time speed skill.
     IEnumerator timeSpeedSkill()
     {
         playerMovement.increaseSpeedSkill(1.5f);

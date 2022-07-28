@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayFunctionChatChild : PlayFunctionChat
 {
-    [SerializeField] private GameObject starChild;
+    [Tooltip("Star on head of the child")] [SerializeField] private GameObject starChild;
     private bool isPlayFunction;
     public override void playFunction()
     {

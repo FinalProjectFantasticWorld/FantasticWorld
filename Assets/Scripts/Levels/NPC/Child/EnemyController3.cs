@@ -3,7 +3,7 @@ using UnityEngine.AI;
 using UnityEngine.UI;
 
 /**
- * This component patrols between given points, chases a given target object when it sees it, and rotates from time to time.
+ * This component patrols between given points, runner a given target object when it sees it, and rotates from time to time.
  */
 [RequireComponent(typeof(PatrollerRegular))]
 [RequireComponent(typeof(Runner))]

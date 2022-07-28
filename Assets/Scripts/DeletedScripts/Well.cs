@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class Well : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI showPressTextGUI;
-    [SerializeField] private TextMeshProUGUI showTimeWaitTextGUI;
-    [SerializeField] private KeyCode keyCode;
-    [SerializeField] private int timeWait;
-    [SerializeField] private Shooter shooterPlayer;
+    [Tooltip("the text that show for talk with well")] [SerializeField] private TextMeshProUGUI showPressTextGUI;
+    [Tooltip("show text time for renew ammo")] [SerializeField] private TextMeshProUGUI showTimeWaitTextGUI;
+    [Tooltip("KeyCode to talk with well")] [SerializeField] private KeyCode keyCode;
+    [Tooltip("the time that need to wait for renew ammo")] [SerializeField] private int timeWait;
+    [Tooltip("Shooter")] [SerializeField] private Shooter shooterPlayer;
     private void Start()
     {
         //shooterPlayer = GetComponent<Shooter>();

@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class DropFishingRod : MonoBehaviour
 {
-    //[SerializeField] private GameObject[] chooseObject;
-    [SerializeField] GameObject sphere;
-    [SerializeField] GameObject player;
-    //[SerializeField] private GameObject images;
-    [SerializeField] GameObject startPositionRod;
-    [SerializeField] Material catchMaterial;
+    [Tooltip("Circle Fishing Rod")] [SerializeField] GameObject sphere;
+    [Tooltip("Player GameObject")] [SerializeField] GameObject player;
+    [Tooltip("the start position circle fishing rod")] [SerializeField] GameObject startPositionRod;
+    [Tooltip("catch object with fishing rod circle material")] [SerializeField] Material catchMaterial;
 
     private void Start()
     {

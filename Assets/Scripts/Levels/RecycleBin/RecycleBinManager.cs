@@ -5,8 +5,8 @@ using UnityEngine;
 public class RecycleBinManager
 {
     // Start is called before the first frame update
-    private static Vector3 openRecycleBinPosition;
-    private static Transform recycleBinOpenObject;
+    private static Vector3 openRecycleBinPosition; // position the open recyclebin
+    private static Transform recycleBinOpenObject; // transform the open recyclebin
     public void setOpenRecyclebinPosition(Vector3 openRecycleBinPosition1)
     {
         openRecycleBinPosition = openRecycleBinPosition1;

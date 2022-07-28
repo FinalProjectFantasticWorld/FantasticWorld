@@ -11,9 +11,9 @@ public class Chat : MonoBehaviour,ChatInterface
     [Tooltip("Message Speaker GUI")] [SerializeField] private TextMeshProUGUI messageSpeeker;
     [Tooltip("Chat Content Message that contain the who speaker and his content message")] [SerializeField] private ChatContentMessages[] contentMessage;
     [Tooltip("Speed message text")] [SerializeField] private float speedSpeeker;
-    [SerializeField] private GameObject NPC;
-    [SerializeField] private bool isPlayFunction;
-    [SerializeField] private bool notStopTime;
+    [Tooltip("NPC")] [SerializeField] private GameObject NPC;
+    [Tooltip("Activate playFunction of the NPC after finished talk")] [SerializeField] private bool isPlayFunction;
+    [Tooltip("Pause of the game.")] [SerializeField] private bool notStopTime;
     private GameObject messageOpened; //openedChat
     private bool canPress = true;
     private int counter;

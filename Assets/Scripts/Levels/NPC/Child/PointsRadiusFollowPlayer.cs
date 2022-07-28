@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PointsRadiusFollowPlayer : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    [Tooltip("Child")] [SerializeField] private GameObject player;
     void Start()
     {
         

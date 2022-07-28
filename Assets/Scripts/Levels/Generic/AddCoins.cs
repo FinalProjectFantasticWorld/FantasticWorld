@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AddCoins : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI textCoins;
+    [Tooltip("text coin GUI ")] [SerializeField] private TextMeshProUGUI textCoins;
     [SerializeField] private int addCoins;
     private int coins = 0;
 
@@ -17,7 +17,7 @@ public class AddCoins : MonoBehaviour
 
     public void addCoin()
     {
-        textCoins.text = "Coins: " + (++coins);
+        textCoins.text = "Coins: " + (coins + addCoins);
     }
 
 }

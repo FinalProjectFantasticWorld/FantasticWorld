@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class LookX : MonoBehaviour
 {
-    [SerializeField] private float rotationSpeed = 1f;
-    private float sensitivity;
-    //private OptionsGame OptionsGamePlay;
-    private float lastSensitivity;
+    [Tooltip("more speed rotation")] [SerializeField] private float rotationSpeed = 1f;
+    private float sensitivity; // the current sensitivity
+    private float lastSensitivity; // last sensitivity
     private void Start()
     {
      

@@ -25068,7 +25068,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   happenGameText: {fileID: 256428061098670712}
-  nameScene: MainGame
+  nameWinScene: MainGame
+  nameLoseScene: MainGame
   MainCamera: {fileID: 256428061339306962}
   explanationHappenGame: {fileID: 256428061439016479}
   audioManager: {fileID: 0}

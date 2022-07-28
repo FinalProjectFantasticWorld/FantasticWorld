@@ -2888,6 +2888,14 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 2014688875}
+    - target: {fileID: 256428063009611009, guid: 5eab3ab3a9357e14489b561d0e2d8daf, type: 3}
+      propertyPath: nameWinScene
+      value: MainGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 256428063009611009, guid: 5eab3ab3a9357e14489b561d0e2d8daf, type: 3}
+      propertyPath: nameLoseScene
+      value: MainGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eab3ab3a9357e14489b561d0e2d8daf, type: 3}
 --- !u!1 &128335380

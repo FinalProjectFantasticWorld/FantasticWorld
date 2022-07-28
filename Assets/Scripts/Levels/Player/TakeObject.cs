@@ -6,21 +6,21 @@ using UnityEngine.UI;
 
 public class TakeObject : MonoBehaviour
 {
-    [SerializeField] private Transform hand;
-    [SerializeField] private RecycleBin[] recycleBins;
-    [SerializeField] private Transform allObjects;
-    [SerializeField] private TextMeshProUGUI textPoints;
-    [SerializeField] Image imageCanvas;
-    [SerializeField] TextMeshProUGUI textEmptyCanvas;
-    private Sprite lastImageCanvas;
-    [SerializeField] private AudioManager audioManager;
-    [SerializeField] private GameObject arrowTutorial;
-    private RecycleBinManager recycleBinManager;
-    private Vector3 lastPosition;
+    [Tooltip("The hand of the player")] [SerializeField] private Transform hand;
+    [Tooltip("Array of the RecycleBin")] [SerializeField] private RecycleBin[] recycleBins;
+    [Tooltip("GameObject that contain all the objects of the game")] [SerializeField] private Transform allObjects;
+    [Tooltip("The text gui of the coins")] [SerializeField] private TextMeshProUGUI textPoints;
+    [Tooltip("The image gui on the hand")] [SerializeField] Image imageCanvas;
+    [Tooltip("The text gui empty hand")] [SerializeField] TextMeshProUGUI textEmptyCanvas;
+    [Tooltip("AudioManager the sound of the game")] [SerializeField] private AudioManager audioManager;
+    [Tooltip("The text gui signifies that the player put the object into a wrong recycle bin")] [SerializeField] private TextMeshProUGUI textWrongBin;
+    private Sprite lastImageCanvas; // save the last image hand
+    private RecycleBinManager recycleBinManager; // RecycleBinManager 
+    private Vector3 lastPosition; // last position of the object.
     private int coins = 0; // score of the player
     private GameObject onHand;
-    //[SerializeField] private string type;
-    [SerializeField] private TextMeshProUGUI textWrongBin;
+
+    
 
 
     private void Start()

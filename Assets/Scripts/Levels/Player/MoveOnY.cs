@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveOnY : MonoBehaviour
 {
-    [SerializeField] private float _speedRotation = 1f;
+    [Tooltip("speed Look Y")] [SerializeField] private float _speedRotation = 1f;
 
     void Update()
     {

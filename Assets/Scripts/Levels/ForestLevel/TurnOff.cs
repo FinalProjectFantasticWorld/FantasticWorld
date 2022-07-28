@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class TurnOff : MonoBehaviour
 {
-    [SerializeField] private GameObject handPlayer;
-    [SerializeField] private int lives;
-    [SerializeField] private Slider slider;
-    [SerializeField] private Gradient gradient;
-    [SerializeField] private Image fill;
+    [Tooltip("hand Player")] [SerializeField] private GameObject handPlayer;
+    [Tooltip("lives of fire")] [SerializeField] private int lives;
+    [Tooltip("Slider of lives")] [SerializeField] private Slider slider;
+    [Tooltip("Gradient of lives")] [SerializeField] private Gradient gradient;
+    [Tooltip("Fill of lives")] [SerializeField] private Image fill;
     private void Start()
     {
         lives *= 2;

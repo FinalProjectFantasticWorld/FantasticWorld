@@ -19,13 +19,13 @@ public class Shooter : MonoBehaviour
 
     private Vector3 saveLocation;
 
-    [SerializeField] private Transform hand;
+    [Tooltip("Hand player")] [SerializeField] private Transform hand;
 
-    [SerializeField] private GameObject weapon;
+    [Tooltip("Weapon GameObject")] [SerializeField] private GameObject weapon;
 
-    [SerializeField] private TextMeshProUGUI ammoText;
+    [Tooltip("Text current ammo")] [SerializeField] private TextMeshProUGUI ammoText;
 
-    [SerializeField] private GameObject noAmmoText;
+    [Tooltip("Text no ammo")] [SerializeField] private GameObject noAmmoText;
 
     private bool isShot = true;
 

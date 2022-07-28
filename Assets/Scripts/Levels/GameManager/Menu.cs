@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
-    private CursorHider cursorHider;
+    [Tooltip("CursorHider")] private CursorHider cursorHider;
     private void Awake()
     {
         cursorHider = new CursorHider();
